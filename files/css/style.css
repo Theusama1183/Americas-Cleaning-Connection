@@ -21,8 +21,11 @@
   box-sizing: border-box;
   font-family: var(--ff-primary);
 }
-.noHover {
-  pointer-events: none;
+
+.navbar-toggler {
+  color: var(--primary);
+  background-color: #ffffff;
+  border: var(--bs-border-width) solid var(--primary);
 }
 .bg-secondary {
   background-color: #1e4259 !important;
@@ -30,12 +33,10 @@
 .bg-white {
   background-color: #ffffff !important;
 }
-.border-secondary {
-  border-color: rgba(255, 255, 255, 0.664) !important;
+.border-color {
+  border-color: rgb(255 255 255 / 18%) !important;
 }
-.border-primary {
-  border-color: rgba(255, 255, 255, 0.664) !important;
-}
+
 .fw-medium {
   font-weight: 500 !important;
 }
@@ -86,9 +87,17 @@ h3 {
   font-size: 36px;
   font-weight: 700;
 }
+h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
 h5 {
   font-size: 24px;
   font-weight: 400;
+}
+h6 {
+  font-size: 20px;
+  font-weight: 600;
 }
 @media (max-width: 430px) {
   h1 {
@@ -133,6 +142,7 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .mt-8 {
   margin-top: 8rem !important;
 }
@@ -146,7 +156,9 @@ a:hover {
   opacity: 0.65;
   transition: all 0.356s;
 }
-
+label {
+  font-size: 14px;
+}
 html,
 body {
   overflow-x: hidden;
@@ -390,10 +402,14 @@ nav li a {
 }
 @media (max-width: 768px) {
   .features-wrapper {
-    position: static;
-    left: 0;
+    left: 15px !important;
     width: 100%;
     margin-top: 100px;
+    position: inherit;
+  }
+  .Quote-wrapper {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 }
 .border-right-1 {
@@ -474,6 +490,48 @@ span.swiper-pagination-bullet {
   left: 0;
   width: 100%;
   margin-top: -150px;
+}
+@media (max-width: 768px) {
+  .working-process-wrapper {
+    left: 15px !important;
+    width: 100%;
+    margin-top: 100px;
+    position: inherit;
+  }
+  .why-choose-us-section {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 425px) {
+  .why-choose-us-section {
+    margin-top: 150%;
+  }
+}
+
+@media (max-width: 320px) {
+  .why-choose-us-section {
+    margin-top: 230%;
+  }
+}
+.img-button-box {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  background-color: var(--primary);
+  width: 256px;
+  padding: 20px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-form-section {
+  background-image: url(../../images/contact-form-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /****************************
   ***********FOOTER************

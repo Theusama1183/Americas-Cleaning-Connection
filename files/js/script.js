@@ -20,6 +20,13 @@ function init() {
 window.addEventListener("load", init);
 window.addEventListener("resize", init);
 
+let navbarToggler = document.querySelector(".navbar-toggler");
+
+navbarToggler.addEventListener("click", function () {
+  let navbarCollapse = document.querySelector(".navbar-collapse");
+  navbarCollapse.classList.toggle("show");
+});
+
 // SWIPER SCRIPT
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 5,
@@ -34,5 +41,27 @@ let swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
   },
 });
