@@ -146,6 +146,9 @@ p {
 .mt-8 {
   margin-top: 8rem !important;
 }
+.mt-5 {
+  margin-top: 5rem !important;
+}
 a {
   text-decoration: none;
   color: var(--primary);
@@ -549,4 +552,18 @@ footer .col-md-9 ul li {
 
 footer .col-md-9 ul li a {
   color: white;
+}
+.footer-top {
+  padding: 50px;
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  background: #a11c21;
+  left: 0;
+}
+@media screen and (max-width: 375px) {
+  .footer-top {
+    top: -70px;
+    padding: 20px;
+  }
 }
