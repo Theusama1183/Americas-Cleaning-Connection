@@ -104,7 +104,7 @@ h6 {
     font-size: 48px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
   }
   h3 {
@@ -484,6 +484,12 @@ span.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 300px;
+}
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding-bottom: 0px;
+  }
 }
 .vh-40 {
   height: 400px;
@@ -492,7 +498,7 @@ span.swiper-pagination-bullet {
   position: absolute;
   left: 0;
   width: 100%;
-  margin-top: -150px;
+  margin-top: -330px;
 }
 @media (max-width: 768px) {
   .working-process-wrapper {
@@ -502,16 +508,24 @@ span.swiper-pagination-bullet {
     position: inherit;
   }
   .why-choose-us-section {
-    margin-top: 30%;
+    margin-top: 85%;
   }
 }
-
+@media (max-width: 575px) {
+  .why-choose-us-section {
+    margin-top: 200%;
+  }
+}
 @media (max-width: 425px) {
   .why-choose-us-section {
-    margin-top: 150%;
+    margin-top: 300%;
   }
 }
-
+@media (max-width: 430px) {
+  .why-choose-us-section {
+    margin-top: 275%;
+  }
+}
 @media (max-width: 320px) {
   .why-choose-us-section {
     margin-top: 230%;
@@ -556,7 +570,7 @@ footer .col-md-9 ul li a {
 .footer-top {
   padding: 50px;
   position: absolute;
-  top: -100px;
+  top: -150px;
   width: 100%;
   background: #a11c21;
   left: 0;
