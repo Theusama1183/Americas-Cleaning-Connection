@@ -26,3 +26,20 @@ navbarToggler.addEventListener("click", function () {
   let navbarCollapse = document.querySelector(".navbar-collapse");
   navbarCollapse.classList.toggle("show");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let videoButton = document.querySelector(".video-button");
+  let videoModal = document.querySelector(".video-modal");
+  let closeButton = videoModal.querySelector(".close-button");
+  let overlay = document.querySelector(".video-modal-overlay");
+
+  videoButton.addEventListener("click", function () {
+    videoModal.classList.add("show");
+    overlay.style.display = "block";
+  });
+
+  closeButton.addEventListener("click", function () {
+    videoModal.classList.remove("show");
+    overlay.style.display = "none";
+  });
+});

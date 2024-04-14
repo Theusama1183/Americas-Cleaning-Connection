@@ -129,6 +129,7 @@ p {
   line-height: 20px;
   color: #000000;
 }
+
 .p-100 {
   padding: 100px;
 }
@@ -550,6 +551,49 @@ span.swiper-pagination-bullet {
   background-size: cover;
   background-position: center center;
 }
+
+/* modal */
+button.video-button {
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+.video-modal {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  position: fixed;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+  border: 15px solid #fff;
+  background: #fff;
+}
+button.close-button {
+  width: 100%;
+  text-align: end;
+  background: none;
+  outline: 0;
+  border: 0;
+}
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Ensure overlay is behind modal */
+}
+.show {
+  display: block;
+}
+
 /****************************
   ***********FOOTER************
   ****************************/
