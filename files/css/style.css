@@ -624,6 +624,9 @@ footer .col-md-9 ul li a {
   background: #a11c21;
   left: 0;
 }
+footer .list-unstyled {
+  margin-top: 30px;
+}
 @media screen and (max-width: 375px) {
   .footer-top {
     top: -70px;
