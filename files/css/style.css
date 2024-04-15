@@ -593,7 +593,12 @@ button.close-button {
 .show {
   display: block;
 }
-
+.important-things {
+  margin-top: 208px;
+}
+.icon-text-wrapper label {
+  margin-bottom: 0;
+}
 /****************************
   ***********FOOTER************
   ****************************/
