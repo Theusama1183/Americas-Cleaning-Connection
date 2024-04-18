@@ -401,7 +401,22 @@ nav li a {
     margin-left: 0;
   }
 }
+#navbarDropdown:hover + .dropdown-menu {
+  display: block;
+}
+.dropdown-menu:hover {
+  display: block;
+}
+.dropdown-menu {
+  display: none;
+}
 
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--primary);
+}
 /****************************
   ***********HOME Page************
   ****************************/
@@ -615,6 +630,50 @@ button.close-button {
 }
 .icon-text-wrapper label {
   margin-bottom: 0;
+}
+/****************************
+  ***********SERVICES************
+  ****************************/
+.service-hero-section {
+  background-image: url(../../images/service-hero-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/****************************
+  ***********Janitorial************
+  ****************************/
+.janitorial-hero-section {
+  background-image: url(../../images/janitorial-hero-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.swiper-slide-box {
+  height: 100%;
+}
+/****************************
+  *********** Carpet & Upholstery Cleaning ************
+  ****************************/
+.Carpet-hero-section {
+  background-image: url(../../images/carpet-hero-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.swiper-slide-box {
+  height: 100%;
+}
+
+/****************************
+  *********** Floor Care ************
+  ****************************/
+.floor-care-hero-section {
+  background-image: url(../../images/floor-care-hero-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /****************************
   ***********FOOTER************
