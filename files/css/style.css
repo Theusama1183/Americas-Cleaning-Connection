@@ -145,7 +145,7 @@ div {
 p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 30px;
   color: #000000;
 }
 
@@ -631,6 +631,12 @@ button.close-button {
 .icon-text-wrapper label {
   margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .img-button-box {
+    position: static;
+    width: 100%;
+  }
+}
 /****************************
   ***********SERVICES************
   ****************************/
@@ -678,6 +684,40 @@ button.close-button {
 .swiper-section .swiper-container {
   scale: 1.2;
   padding-top: 80px;
+}
+
+.resilient-floors-section {
+  background-image: url(../../images/resilient-floors-section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.vct-list {
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+.vct-list li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.vct-list li::before {
+  content: url(../../images/dot.png);
+  padding-right: 15px !important;
+}
+
+.stone-floors-section {
+  background-image: url(../../images/stone-floors.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.wood-floors-section {
+  background-image: url(../../images/wood-floors.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /****************************
   ***********FOOTER************

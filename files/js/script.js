@@ -45,11 +45,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 swiper = new Swiper(".swiper-container", {
-  slidesPerView: 5,
-  spaceBetween: 10,
+  slidesPerView: 4,
+  spaceBetween: 20,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });
