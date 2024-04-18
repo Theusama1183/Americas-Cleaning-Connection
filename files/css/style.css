@@ -675,6 +675,10 @@ button.close-button {
   background-size: cover;
   background-position: center center;
 }
+.swiper-section .swiper-container {
+  scale: 1.2;
+  padding-top: 80px;
+}
 /****************************
   ***********FOOTER************
   ****************************/
