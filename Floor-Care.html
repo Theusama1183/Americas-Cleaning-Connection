@@ -66,7 +66,7 @@
                 <div class="icon-text-wrapper">
                   <label for="email-box"> Services Area </label>
                   <p class="fw-medium mb-0 small">
-                    Kansas City Metropolitan area, Missouri
+                    Kansas City&nbsp;Metropolitan area, Missouri
                   </p>
                 </div>
               </div>
@@ -74,7 +74,10 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg bg-secondary py-3">
+      <nav
+        class="navbar navbar-expand-lg bg-secondary py-3 fixed-top"
+        style="transition: top 0.3s ease-in-out 0s"
+      >
         <div class="container">
           <button
             class="navbar-toggler"
@@ -85,7 +88,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav my-2 my-lg-0 text-md-right text-center">
@@ -114,7 +117,7 @@
                     <a
                       class="dropdown-item"
                       href="Carpet-Upholstery-Cleaning.html"
-                      >Carpet & Upholstery Cleaning</a
+                      >Carpet &amp; Upholstery Cleaning</a
                     >
                   </li>
                   <li>
@@ -146,7 +149,7 @@
             <div class="text-center ms-auto">
               <a
                 class="badge pill-rounded bg-white text-primary py-3 px-3 text-decoration-none"
-                href="#"
+                href="request-service.html"
                 >Request Service</a
               >
               <a
@@ -171,9 +174,21 @@
     </section>
 
     <section id="section" class="swiper-section py-100">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+      <div
+        class="swiper-container swiper-initialized swiper-horizontal swiper-backface-hidden"
+      >
+        <div
+          class="swiper-wrapper"
+          id="swiper-wrapper-852d3886b6e584f9"
+          aria-live="polite"
+        >
+          <div
+            class="swiper-slide swiper-slide-active"
+            role="group"
+            aria-label="1 / 5"
+            style="width: 625px; margin-right: 20px"
+            data-swiper-slide-index="0"
+          >
             <div class="swiper-slide-box">
               <img src="./images/slide-1.png" alt="" />
               <h5 class="text-secondary fw-medium mb-0">Resilient Floors</h5>
@@ -186,7 +201,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide swiper-slide-next"
+            role="group"
+            aria-label="2 / 5"
+            style="width: 625px; margin-right: 20px"
+            data-swiper-slide-index="1"
+          >
             <div class="swiper-slide-box">
               <img src="./images/slide-2.png" alt="" />
               <h5 class="text-secondary fw-medium mb-0">Stone Floors</h5>
@@ -204,7 +225,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            role="group"
+            aria-label="3 / 5"
+            style="width: 625px; margin-right: 20px"
+            data-swiper-slide-index="2"
+          >
             <div class="swiper-slide-box">
               <img src="./images/slide-3.png" alt="" />
               <h5 class="text-secondary fw-medium mb-0">Wood Floors</h5>
@@ -220,7 +247,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            role="group"
+            aria-label="4 / 5"
+            style="width: 625px; margin-right: 20px"
+            data-swiper-slide-index="3"
+          >
             <div class="swiper-slide-box">
               <img src="./images/slide-4.png" alt="" />
               <h5 class="text-secondary fw-medium mb-0">Concrete Floors</h5>
@@ -235,7 +268,13 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            role="group"
+            aria-label="5 / 5"
+            style="width: 625px; margin-right: 20px"
+            data-swiper-slide-index="4"
+          >
             <div class="swiper-slide-box">
               <img src="./images/slide-5.png" alt="" />
               <h5 class="text-secondary fw-medium mb-0">Ceramic Tile Floors</h5>
@@ -254,7 +293,46 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div
+          class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+        >
+          <span
+            class="swiper-pagination-bullet swiper-pagination-bullet-active"
+            tabindex="0"
+            role="button"
+            aria-label="Go to slide 1"
+            aria-current="true"
+          ></span
+          ><span
+            class="swiper-pagination-bullet"
+            tabindex="0"
+            role="button"
+            aria-label="Go to slide 2"
+          ></span
+          ><span
+            class="swiper-pagination-bullet"
+            tabindex="0"
+            role="button"
+            aria-label="Go to slide 3"
+          ></span
+          ><span
+            class="swiper-pagination-bullet"
+            tabindex="0"
+            role="button"
+            aria-label="Go to slide 4"
+          ></span
+          ><span
+            class="swiper-pagination-bullet"
+            tabindex="0"
+            role="button"
+            aria-label="Go to slide 5"
+          ></span>
+        </div>
+        <span
+          class="swiper-notification"
+          aria-live="assertive"
+          aria-atomic="true"
+        ></span>
       </div>
     </section>
 
@@ -275,7 +353,9 @@
     <section id="section" class="py-100">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">VCT Vinyl Composition Tile</h2>
             <p class="mt-4">
               VCT comes in 12” tiles, is a porous floor material that can hold
@@ -295,7 +375,8 @@
               <li>Initial restorative and salvage cleaning.</li>
               <li>Preventative procedures</li>
               <li>
-                Establish daily, routine & periodic floor maintenance programs
+                Establish daily, routine &amp; periodic floor maintenance
+                programs
               </li>
               <li>Restorative (stripping)</li>
             </ul>
@@ -316,7 +397,9 @@
               <img src="images/sheet-vinyl.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Sheet Vinyl</h2>
             <p class="mt-4">
               Sheet vinyl comes in 6’ to 12’ widths, available in many colors
@@ -339,7 +422,8 @@
               <li>Initial restorative and salvage cleaning.</li>
               <li>Preventative procedures</li>
               <li>
-                Establish daily, routine & periodic floor maintenance programs
+                Establish daily, routine &amp; periodic floor maintenance
+                programs
               </li>
               <li>Restorative cleaning (stripping)</li>
             </ul>
@@ -374,7 +458,9 @@
     <section id="section" class="py-100">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Marble Flooring</h2>
             <p class="mt-4">
               Marble is a metamorphic stone and is one of the most expensive
@@ -406,7 +492,9 @@
               <img src="images/granite-flooring.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Granite Flooring</h2>
             <p class="mt-4">
               Granite is an igneous stone and contains many different minerals
@@ -450,7 +538,9 @@
               <li>Restorative (stripping)</li>
             </ul>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <div class="position-relative">
               <img
                 src="images/travertine-flooring.png"
@@ -466,7 +556,9 @@
               <img src="images/slate-flooring.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Slate Flooring</h2>
             <p class="mt-4">
               Slate is a metamorphic stone, which comes in common colors such as
@@ -484,7 +576,9 @@
           </div>
         </div>
         <div class="row pt-100">
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Terrazzo Flooring</h2>
             <p class="mt-4">
               Terrazzo was very popular in the 1950’s and 1960’s and we saw a
@@ -535,7 +629,9 @@
     <section id="section" class="py-100">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Solid Wood Flooring</h2>
             <p class="mt-4">
               Solid wood flooring is one complete piece of wood from top to
@@ -572,7 +668,9 @@
               />
             </div>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <h2 class="text-primary">Parquet wood flooring:</h2>
             <p class="mt-4">
               Parquet wood flooring is usually a 12” x 12” square with endless
@@ -609,7 +707,9 @@
               <li>Restoration (refinishing)</li>
             </ul>
           </div>
-          <div class="col-md-12 col-lg-6">
+          <div
+            class="col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
             <div class="position-relative">
               <img
                 src="images/engineered-wood-flooring.png"
@@ -662,7 +762,9 @@
             <ul class="vct-list mt-4">
               <li>Daily and routine cleaning</li>
               <li>Periodic and restorative cleaning (power wash)</li>
-              <li>Restorative cleaning (stripping, sealing, finishing).  </li>
+              <li>
+                Restorative cleaning (stripping, sealing, finishing). &nbsp;
+              </li>
             </ul>
           </div>
           <div class="col-md-12 col-lg-6">
@@ -833,21 +935,6 @@
         </div>
       </div>
     </section>
-    <!--Moddal-->
-    <div class="video-modal-overlay bg-primary flex-column p-4"></div>
-    <div class="video-modal">
-      <button class="close-button">
-        <i class="fa fa-times"></i>
-      </button>
-      <iframe
-        width="100%"
-        height="560px"
-        src="https://www.youtube.com/embed/S9HhqLh6gz8?si=WK9Z3w8vFytDaldL"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
 
     <!--FOOTER-->
     <footer class="pt-5 pb-2 bg-secondary">
@@ -880,10 +967,11 @@
               />
             </a>
             <p class="opacity-75 small text-white mt-4">
-              ACC Management Group is Kansas City's choice for commercial
-              cleaning and building management services for office buildings,
-              industrial, retail and medical. We provide commercial cleaning and
-              building maintenance services in all surrounding areas.
+              ACC Management Group is&nbsp;Kansas City's&nbsp;choice for
+              commercial cleaning and building management services for office
+              buildings, industrial, retail and medical. We provide commercial
+              cleaning and building maintenance services in all surrounding
+              areas.
             </p>
           </div>
           <div class="col-md-4 col-lg-2 mb-4 ml-auto">
@@ -933,7 +1021,7 @@
               </li>
               <li>
                 <a class="text-white" href="Terms-and-Condition.html"
-                  >Terms & Condition</a
+                  >Terms &amp; Condition</a
                 >
               </li>
             </ul>
@@ -952,10 +1040,10 @@
             class="col-sm-12 col-md-6 text-white d-flex align-items-center justify-content-end"
           >
             <span class="mr-2 small">Follow Us On</span>
-            <i class="fa-brands fa-square-facebook px-1"></i>
-            <i class="fa-brands fa-x-twitter px-1"></i>
-            <i class="fa-brands fa-linkedin px-1"></i>
-            <i class="fab fa-youtube px-1"></i>
+            <i class="fa-brands fa-square-facebook px-1" aria-hidden="true"></i>
+            <i class="fa-brands fa-x-twitter px-1" aria-hidden="true"></i>
+            <i class="fa-brands fa-linkedin px-1" aria-hidden="true"></i>
+            <i class="fab fa-youtube px-1" aria-hidden="true"></i>
           </div>
         </div>
       </div>

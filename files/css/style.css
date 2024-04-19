@@ -695,6 +695,25 @@ button.close-button {
     padding-top: 0px !important;
   }
 }
+.overlay p {
+  height: 180px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.overlay p::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.overlay p::-webkit-scrollbar-track {
+  background: #ffffff5b;
+}
+
+/* Handle */
+.overlay p::-webkit-scrollbar-thumb {
+  background: #fff;
+}
 
 .resilient-floors-section {
   background-image: url(../../images/resilient-floors-section.png);
@@ -883,6 +902,48 @@ button.close-button {
   background-size: cover;
   background-position: center center;
 }
+/****************************
+  ***********Contact Us************
+  ****************************/
+.contact-hero-section {
+  background-image: url(../../images/contact-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/****************************
+  ***********Blog************
+  ****************************/
+.blog-hero-section {
+  background-image: url(../../images/blog-secrion-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.page-number {
+  padding: 10px 16px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border-radius: 10px;
+  color: #000000;
+  margin: 0 10px;
+}
+
+.page-number.active {
+  background: #a11c21;
+  color: #fff;
+}
+/****************************
+  ***********Request A Service************
+  ****************************/
+.request-hero-section {
+  background-image: url(../../images/request-secrion-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 /****************************
   ***********FOOTER************
   ****************************/
