@@ -64,3 +64,29 @@ swiper = new Swiper(".swiper-container", {
     },
   },
 });
+
+//faq's
+var accordion = document.getElementsByClassName("accordion");
+var i;
+
+// Set the first accordion as active initially
+accordion[0].classList.add("active");
+accordion[0].nextElementSibling.style.display = "block";
+
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    var isActive = this.classList.contains("active");
+
+    // Remove "active" class from all accordions
+    for (var j = 0; j < accordion.length; j++) {
+      accordion[j].classList.remove("active");
+      accordion[j].nextElementSibling.style.display = "none";
+    }
+
+    // Add or remove "active" class based on previous state
+    if (!isActive) {
+      this.classList.add("active");
+      this.nextElementSibling.style.display = "block";
+    }
+  });
+}

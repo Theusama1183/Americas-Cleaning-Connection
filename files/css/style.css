@@ -769,6 +769,121 @@ button.close-button {
   margin-right: 20px;
 }
 /****************************
+  ***********FAQ's************
+  ****************************/
+.faqs-section-banner {
+  background-image: url(../../images/faqs-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.accordion {
+  color: #0f0928;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+  font-feature-settings: "liga" off;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.active.accordion {
+  margin-bottom: 0px;
+}
+.active,
+.accordion:hover {
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+.accordion:not(.active):hover {
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.panel {
+  padding: 10px 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.panel p {
+  margin-bottom: 0;
+}
+.accordion.active + .panel {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion.active::after {
+  content: "-";
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.accordion::after {
+  content: "+";
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/****************************
+  ***********Associations************
+  ****************************/
+.associations-hero-section {
+  background-image: url(../../images/associations-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/****************************
+  ***********5 Important Things************
+  ****************************/
+.imp-things-hero-section {
+  background-image: url(../../images/imp-things-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.insurance-section {
+  background-image: url(../../images/insurance-section-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/****************************
   ***********FOOTER************
   ****************************/
 
