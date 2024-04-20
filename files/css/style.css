@@ -943,7 +943,24 @@ button.close-button {
   background-size: cover;
   background-position: center center;
 }
-
+/****************************
+  ***********Job Application************
+  ****************************/
+.job-application-hero-section {
+  background-image: url(../../images/job-application-secrion-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.angle-down {
+  position: absolute;
+  left: auto;
+  right: 0;
+  z-index: 999999;
+  top: 50%;
+  margin-right: 20px;
+  transform: translate(-50%, -50%);
+}
 /****************************
   ***********FOOTER************
   ****************************/
