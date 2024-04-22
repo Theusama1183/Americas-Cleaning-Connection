@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const d = new Date();
+  let year = d.getFullYear();
+  document.getElementById("year").innerHTML = year;
+});
+
 function init() {
   const navbar = document.querySelector("nav");
   function toggleNavbarClass() {
@@ -15,7 +21,6 @@ function init() {
     section.style.minHeight = `calc(100vh - ${headerHeight}px)`;
   }
   section.style.marginTop = `${headerHeight}px`;
-  document.getElementById("year").textContent = `${new Date().getFullYear()}`;
 }
 window.addEventListener("load", init);
 window.addEventListener("resize", init);
