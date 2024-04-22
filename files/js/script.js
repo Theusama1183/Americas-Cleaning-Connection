@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 swiper = new Swiper(".swiper-container", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
   pagination: {
