@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-lg-4 col-xl-4 mt-2">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                 <img
                   src="images/ACCManagementGroup_logo 7.png"
                   alt=""
@@ -75,7 +75,7 @@
         </div>
       </div>
       <nav class="navbar navbar-expand-lg bg-secondary py-3">
-        <div class="container">
+        <div class="container flex-row-reverse">
           <button
             class="navbar-toggler"
             type="button"
@@ -87,6 +87,13 @@
           >
             <i class="fas fa-bars"></i>
           </button>
+          <a class="navbar-brand d-lg-none d-block" href="/">
+            <img
+              src="images/ACCManagementGroup_logo 7.png"
+              alt=""
+              width="250px"
+            />
+          </a>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav my-2 my-lg-0 text-md-right text-center">
               <li class="nav-item">
@@ -124,10 +131,29 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="About-us.html">
+              <li class="nav-item position-relative">
+                <a
+                  class="nav-link text-white dropdown-toggle"
+                  id="navbarDropdown"
+                  href="About-us.html"
+                >
                   ABOUT US
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Faqs.html">FAQ's</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Associations.html"
+                      >Associations</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Job-application.html"
+                      >Job Application</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="5-Important-things.html"
@@ -145,12 +171,12 @@
             </ul>
             <div class="text-center ms-auto">
               <a
-                class="badge pill-rounded bg-white text-primary py-3 px-3 text-decoration-none"
+                class="badge pill-rounded bg-white text-primary py-3 px-3 text-decoration-none w-100 w-md-auto"
                 href="request-service.html"
                 >Request Service</a
               >
               <a
-                class="badge pill-rounded bg-primary py-3 px-3 text-decoration-none"
+                class="badge pill-rounded bg-primary py-3 px-3 text-decoration-none w-100 w-md-auto mt-3 mt-md-0"
                 href="tel:9312971769"
                 >931-297-1769</a
               >
@@ -1005,8 +1031,8 @@
           </div>
         </div>
       </div>
-      <div class="container mt-5 pt-100">
-        <div class="row pt-4">
+      <div class="container pt-100">
+        <div class="row">
           <div class="col-md-12 col-lg-4">
             <a class="navbar-brand" href="#">
               <img
@@ -1040,8 +1066,12 @@
               <li>
                 <a class="text-white" href="Janitorial.html">Janitorials</a>
               </li>
-              <li><a class="text-white" href="Carpet.html">Carpet</a></li>
-              <li><a class="text-white" href="Floor.html">Floor</a></li>
+              <li>
+                <a class="text-white" href="Carpet-Upholstery-Cleaning.html"
+                  >Carpet</a
+                >
+              </li>
+              <li><a class="text-white" href="Floor-Care.html">Floor</a></li>
               <li>
                 <a class="text-white" href="Window.html">Window</a>
               </li>
@@ -1080,12 +1110,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <p class="text-white small mb-0">
+            <p class="text-white small mb-0 text-md-left text-center">
               © 2021 ACC Management Group. All rights reserved.
             </p>
           </div>
           <div
-            class="col-sm-12 col-md-6 text-white d-flex align-items-center justify-content-end"
+            class="col-sm-12 col-md-6 text-white d-flex align-items-center justify-content-md-end justify-content-center mt-3 mt-md-0"
           >
             <span class="mr-2 small">Follow Us On</span>
             <i class="fa-brands fa-square-facebook px-1"></i>

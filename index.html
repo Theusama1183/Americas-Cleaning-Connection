@@ -33,7 +33,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-lg-4 col-xl-4 mt-2">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                 <img
                   src="images/ACCManagementGroup_logo 7.png"
                   alt=""
@@ -75,7 +75,7 @@
         </div>
       </div>
       <nav class="navbar navbar-expand-lg bg-secondary py-3">
-        <div class="container">
+        <div class="container flex-row-reverse">
           <button
             class="navbar-toggler"
             type="button"
@@ -87,6 +87,13 @@
           >
             <i class="fas fa-bars"></i>
           </button>
+          <a class="navbar-brand d-lg-none d-block" href="/">
+            <img
+              src="images/ACCManagementGroup_logo 7.png"
+              alt=""
+              width="250px"
+            />
+          </a>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav my-2 my-lg-0 text-md-right text-center">
               <li class="nav-item">
@@ -124,10 +131,29 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="About-us.html">
+              <li class="nav-item position-relative">
+                <a
+                  class="nav-link text-white dropdown-toggle"
+                  id="navbarDropdown"
+                  href="About-us.html"
+                >
                   ABOUT US
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Faqs.html">FAQ's</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Associations.html"
+                      >Associations</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Job-application.html"
+                      >Job Application</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="5-Important-things.html"
@@ -145,12 +171,12 @@
             </ul>
             <div class="text-center ms-auto">
               <a
-                class="badge pill-rounded bg-white text-primary py-3 px-3 text-decoration-none"
+                class="badge pill-rounded bg-white text-primary py-3 px-3 text-decoration-none w-100 w-md-auto"
                 href="request-service.html"
                 >Request Service</a
               >
               <a
-                class="badge pill-rounded bg-primary py-3 px-3 text-decoration-none"
+                class="badge pill-rounded bg-primary py-3 px-3 text-decoration-none w-100 w-md-auto mt-3 mt-md-0"
                 href="tel:9312971769"
                 >931-297-1769</a
               >
@@ -181,8 +207,8 @@
         </div>
       </div>
     </section>
-    <section id="section" class="form-section">
-      <div class="container position-relative">
+    <section id="section">
+      <div class="container">
         <div class="row bg-secondary features-wrapper py-4">
           <div
             class="col-sm-12 col-md-4 p-sm-5 p-3 border-right-1 border-color"
@@ -227,8 +253,12 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="section" class="form-section">
+      <div class="container position-relative">
         <div class="row py-100 Quote-row">
-          <div class="pt-100 mt-10 Quote-wrapper important-things">
+          <div class="Quote-wrapper">
             <h2 class="text-primary fw-bold">5 Important Things</h2>
             <p>You Should Know Before Letting Someone Into Your Business</p>
 
@@ -332,7 +362,7 @@
               Providing The Best Services
             </h2>
             <div class="row pt-4">
-              <div class="col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-4">
                 <div class="swiper-slide-box">
                   <img
                     src="./images/people-doing-community-service-by-collecting-trash-2.png"
@@ -348,7 +378,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-4">
                 <div class="swiper-slide-box">
                   <img
                     src="./images/people-housework-housekeeping-concept-close-up-woman-with-legs-vacuum-cleaner-cleaning-carpet-home.png"
@@ -366,7 +396,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-4">
                 <div class="swiper-slide-box">
                   <img
                     src="./images/man-doing-professional-home-cleaning-service.png"
@@ -398,7 +428,7 @@
     <section id="section">
       <div class="contact-section py-100">
         <div class="container">
-          <div class="row pb-100 w-95 m-auto">
+          <div class="row m-auto">
             <div class="col-md-12 col-lg-8">
               <h5 class="text-white">FELL FREE TO Contact</h5>
               <h2 class="text-white">Call Us: 931-297-1769</h2>
@@ -409,7 +439,7 @@
           </div>
         </div>
       </div>
-      <div class="container position-relative vh-40">
+      <div class="container working-process-container">
         <div class="bg-primary working-process-wrapper py-5 px-4">
           <div class="row">
             <div class="col-sm-12 col-md-4 p-4 border-right-1 border-color">
@@ -471,7 +501,7 @@
       </div>
     </section>
 
-    <section id="section" class="why-choose-us-section pb-100">
+    <section id="section" class="why-choose-us-section py-100">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-6">
@@ -668,8 +698,8 @@
           </div>
         </div>
       </div>
-      <div class="container mt-5 pt-100">
-        <div class="row py-4">
+      <div class="container pt-100">
+        <div class="row">
           <div class="col-md-12 col-lg-4">
             <a class="navbar-brand" href="#">
               <img
@@ -703,8 +733,12 @@
               <li>
                 <a class="text-white" href="Janitorial.html">Janitorials</a>
               </li>
-              <li><a class="text-white" href="Carpet.html">Carpet</a></li>
-              <li><a class="text-white" href="Floor.html">Floor</a></li>
+              <li>
+                <a class="text-white" href="Carpet-Upholstery-Cleaning.html"
+                  >Carpet</a
+                >
+              </li>
+              <li><a class="text-white" href="Floor-Care.html">Floor</a></li>
               <li>
                 <a class="text-white" href="Window.html">Window</a>
               </li>
@@ -743,12 +777,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <p class="text-white small mb-0">
+            <p class="text-white small mb-0 text-md-left text-center">
               © 2021 ACC Management Group. All rights reserved.
             </p>
           </div>
           <div
-            class="col-sm-12 col-md-6 text-white d-flex align-items-center justify-content-end"
+            class="col-sm-12 col-md-6 text-white d-flex align-items-center justify-content-md-end justify-content-center mt-3 mt-md-0"
           >
             <span class="mr-2 small">Follow Us On</span>
             <i class="fa-brands fa-square-facebook px-1"></i>
