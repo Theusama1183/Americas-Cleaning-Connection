@@ -3,6 +3,30 @@ document.addEventListener("DOMContentLoaded", function () {
   let year = d.getFullYear();
   document.getElementById("year").innerHTML = year;
 });
+//check if word count up to 30 words then show a reed more button to show more content
+document.addEventListener("DOMContentLoaded", function () {
+  let contentWrapper = document.querySelector(".content-wrapper");
+  let btnWrapper = document.querySelector(".read-more-btn");
+  const wordsCount = contentWrapper.textContent.split(/\s+/).length;
+
+  if (wordsCount > 56) {
+    contentWrapper.classList.add("split-text");
+    btnWrapper.innerHTML =
+      '<button class="show-more-content">Read More</button>';
+  }
+
+  btnWrapper.addEventListener("click", function () {
+    if (contentWrapper.classList.contains("split-text")) {
+      contentWrapper.classList.remove("split-text");
+      btnWrapper.innerHTML =
+        '<button class="show-more-content">Show Less</button>';
+    } else {
+      contentWrapper.classList.add("split-text");
+      btnWrapper.innerHTML =
+        '<button class="show-more-content">Read More</button>';
+    }
+  });
+});
 
 function init() {
   const navbar = document.querySelector("nav");

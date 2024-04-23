@@ -585,6 +585,16 @@ button.close-button {
   background-size: cover;
   background-position: center center;
 }
+.split-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 9;
+}
+.show-more-content {
+  background: none;
+  color: var(--primary);
+}
 
 /****************************
   ***********Janitorial************
